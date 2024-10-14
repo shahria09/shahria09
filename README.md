@@ -1,6 +1,6 @@
 # Hi there, I'm Md Shahria rahoman irfad! 👋
 
-![Profile Banner](https://www.example.com/sample-banner.jpg)  
+![Profile Banner](https://via.placeholder.com/1200x300.png?text=Your+Custom+Banner+Here)  
 <!-- Replace this with your own banner image or remove this line -->
 
 Welcome to my GitHub profile! I’m a passionate developer who loves building web applications and exploring new technologies. Here’s a little more about me:
