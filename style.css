@@ -1,76 +1,104 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #dfe6e9;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e09, #f8d, #f9a);
+    color: #333;
 }
 
-.calculator {
-    background-color: #2d3436;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    width: 350px;
-}
-
-#display {
+.container {
     width: 100%;
-    height: 70px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    font-size: 36px;
-    text-align: right;
-    padding: 15px;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffffdd;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.generator {
+    display: flex;
+    gap: 10px;
     margin-bottom: 15px;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+#password {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
 
-.btn {
-    background-color: #636e72;
+#copy-btn {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
     border: none;
-    padding: 20px;
-    font-size: 24px;
-    color: white;
-    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #b2bec3;
+#copy-btn:hover {
+    background-color: #45a049;
 }
 
-.operator {
-    background-color: #ff7675;
+.settings label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.operator:hover {
-    background-color: #d63031;
+#generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-.equal {
-    background-color: #00cec9;
-    grid-column: span 2;
+#generate-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.equal:hover {
-    background-color: #00b894;
+.strength {
+    margin-top: 20px;
+    font-size: 1rem;
 }
 
-.zero {
-    grid-column: span 2;
+#strength-value {
+    font-weight: bold;
+    color: #FF5722;
 }
 
-.btn:active {
-    background-color: #0984e3;
-    transform: scale(0.98);
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: none;
 }
